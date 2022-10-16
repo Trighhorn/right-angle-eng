@@ -35,7 +35,7 @@ export default function Home() {
           </div>
         </header>
         <div className="homepage">
-          <div classname="panel-one">
+          <div className="panel-one">
             <h1>
               CAD & Engineering
               <div className="Typewriter">Modernized</div>
