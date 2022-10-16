@@ -78,6 +78,47 @@ export default function Home() {
               </div>
             </div>
           </div>
+          <div className="panel-three">
+            <h1>Fast an intuitive</h1>
+            <div>
+              Creating a new job is quick and painless with our job form, via a
+              simple set of steps that guides you through providing your job
+              information. We make it easy to upload your job files either
+              directly from your computer or via our built-in third party file
+              storage integrations.
+            </div>
+            <Image
+              src="/raetruss.png"
+              alt="right angle engineering truss software photo"
+              width={951}
+              height={677}
+            />
+          </div>
+          <div className="panle-four">
+            <h1>All the info you need</h1>
+            <div>
+              We handle everything about your job, and display it all in a clean
+              and easy to understand interface. You can also message with your
+              company and our internal team about your job, and review uploaded
+              job files.
+            </div>
+            <Image
+              src="/raejobs.png"
+              alt="right angle engineering jobs software photo"
+              width={951}
+              height={677}
+            />
+          </div>
+          <div className="panel-five">
+            <Image
+              src="/rae-logo-color.svg"
+              alt="right angle engineering logo with color"
+              width={85}
+              height={85}
+            />
+            <h3>Request a demo today.</h3>
+            <button>get started</button>
+          </div>
         </div>
       </main>
 

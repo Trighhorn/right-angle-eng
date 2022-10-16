@@ -1,0 +1,10 @@
+<svg data-name="logo white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" role="img">
+    <defs>
+        <linearGradient id="rae-logo_white_svg__a" x1="72.37" y1="31.97" x2="602.33" y2="70.22" gradientTransform="scale(1 -1) rotate(30 973.617 21.56)" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#f4bc3c"></stop>
+            <stop offset="1" stop-color="#f2891e"></stop>
+        </linearGradient>
+    </defs>
+    <circle cx="399.7" cy="276.51" r="248.25" style="fill: url(&quot;#rae-logo_white_svg__a&quot;);"></circle>
+    <path d="M151.42 771.78h497.17L151.42 274.61v497.17Z" style="fill: rgb(251, 251, 251);"></path>
+</svg>
