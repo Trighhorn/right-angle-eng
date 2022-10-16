@@ -1,17 +1,16 @@
 import Head from "next/head";
 import Image from "next/image";
-import styles from "../styles/Home.module.css";
 import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div className='home-page'>
       <Head>
         <title>Right Angle Engineering – Automating the solar industry</title>
         <link rel="icon" href="/favicon.svg" />
       </Head>
 
-      <main className={styles.main}>
+      <main>
         <header>
           <div className="header">
             <Link href="/">
@@ -35,17 +34,27 @@ export default function Home() {
           </div>
         </header>
         <div className="homepage">
-          <div className="panel-one">
-            <h1>
-              CAD & Engineering
-              <div className="Typewriter">Modernized</div>
-            </h1>
-            <h5>
-              Were bringing the solar industry into the modern era by
-              revolutionizing the solar permitting process to be simple and
-              efficient
-            </h5>
-            <button>Request a demo</button>
+          <div className="panel-one relative flex justify-center h-screen items-center overflow-hidden mb-12">
+            <video
+              autoplay='true'
+              loop='ture'
+              muted
+              class="absolute z-10 w-auto min-w-full min-h-full max-w-none"
+            >
+              <source src="homevideo.webm" type="video/webm" />
+            </video>
+            <div className="panel-one-text relative z-30 p-5 text-2xl text-white bg-slate bg-opacity-25 w-full h-full">
+              <h1>
+                CAD & Engineering
+                <div className="type-home text-orange" />
+              </h1>
+              <h5>
+                Were bringing the solar industry into the modern era by
+                revolutionizing the solar permitting process to be simple and
+                efficient
+              </h5>
+              <button className="bg-white text-black rounded-xl">Request a demo</button>
+            </div>
           </div>
           <div className="panel-two">
             <h2>We Handle it all.</h2>
@@ -122,7 +131,7 @@ export default function Home() {
         </div>
       </main>
 
-      <footer className={styles.footer}>
+      <footer>
         <div className="adress">
           <Image
             src="/rae-logo.svg"
