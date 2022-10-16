@@ -142,13 +142,13 @@ export default function Home() {
         </div>
         <div>
           <div>
-            <Link href="/">
+            <Link href="/privacy">
               <a>Privacy</a>
             </Link>
-            <Link href="/">
+            <Link href="/terms">
               <a>Terms</a>
             </Link>
-            <Link href="/">
+            <Link href="/contact">
               <a>Contact Us</a>
             </Link>
           </div>
