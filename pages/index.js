@@ -13,7 +13,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <header>
-          <div>
+          <div className="header">
             <Link href="/">
               <div>
                 <Image
@@ -34,43 +34,50 @@ export default function Home() {
             <button>Get Started</button>
           </div>
         </header>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{" "}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+        <div className="homepage">
+          <div classname="panel-one">
+            <h1>
+              CAD & Engineering
+              <div className="Typewriter">Modernized</div>
+            </h1>
+            <h5>
+              Were bringing the solar industry into the modern era by
+              revolutionizing the solar permitting process to be simple and
+              efficient
+            </h5>
+            <button>Request a demo</button>
+          </div>
+          <div className="panel-two">
+            <h2>We Handle it all.</h2>
+            <div className="card-container">
+              <div className="card">
+                <div className="cad-card">
+                  <h5>CAD</h5>
+                  <div>
+                    Our Solar Permit Designs include the cover sheet, site &
+                    roof plan, string layout, attachment detail, and equipment
+                    data sheets.
+                  </div>
+                </div>
+                <div className="eng-card">
+                  <h5>Engineering</h5>
+                  <div>
+                    Our PE’s are licensed in all 50 states. We have you covered,
+                    from special inspection forms, to post install visits, and
+                    everything in between.
+                  </div>
+                </div>
+                <div className="Int-card">
+                  <h5>Intergrations</h5>
+                  <div>
+                    Our development team is in place to fully integrate into
+                    your current system, and eliminate the common pain points
+                    associated with engineering.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </main>
 
