@@ -12,6 +12,28 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
+        <header>
+          <div>
+            <Link href="/">
+              <div>
+                <Image
+                  src="/rae-logo.svg"
+                  alt="right angle engineering logo"
+                  width={45}
+                  height={45}
+                />
+                <Image
+                  src="/rae-text-logo.svg"
+                  alt="right angle engineering text logo"
+                  width={125}
+                  height={50}
+                />
+              </div>
+            </Link>
+            <button>Log In</button>
+            <button>Get Started</button>
+          </div>
+        </header>
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
@@ -61,11 +83,11 @@ export default function Home() {
             height={40}
           />
           <div>
-            (252) 590-4141 
+            (252) 590-4141
             <br />
-            580 E Technology Ave 
+            580 E Technology Ave
             <br />
-            Suite C1500 
+            Suite C1500
             <br />
             Orem, UT 84097
           </div>
@@ -83,11 +105,18 @@ export default function Home() {
             </Link>
           </div>
           <div className="social-links">
-            <a href="https://www.facebook.com/profile.php?id=100075879137478">Facebook icon</a>
-            <a href="https://www.instagram.com/rightangleengineering">Instagram icon</a>
+            <a href="https://www.facebook.com/profile.php?id=100075879137478">
+              Facebook icon
+            </a>
+            <a href="https://www.instagram.com/rightangleengineering">
+              Instagram icon
+            </a>
             <a href="https://twitter.com/RightAngleEng">Twitter icon</a>
-            <a href="https://www.linkedin.com/company/right-angle-engineering">LinkedIn icon</a>
+            <a href="https://www.linkedin.com/company/right-angle-engineering">
+              LinkedIn icon
+            </a>
           </div>
+          <div>©2022 Right Angle Engineering, LLC. All rights reserved.</div>
         </div>
       </footer>
     </div>
