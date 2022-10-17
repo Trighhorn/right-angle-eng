@@ -2,9 +2,24 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 
+import {
+  faFacebookSquare,
+  faLinkedin,
+  faTwitter,
+  faInstagramSquare,
+} from "@fortawesome/free-brands-svg-icons";
+
+import {
+  faCog,
+  faHome,
+  faLongArrowAltUp,
+} from "@fortawesome/free-solid-svg-icons";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 export default function Home() {
   return (
-    <div className='home-page'>
+    <div className="home-page">
       <Head>
         <title>Right Angle Engineering – Automating the solar industry</title>
         <link rel="icon" href="/favicon.svg" />
@@ -12,9 +27,9 @@ export default function Home() {
 
       <main>
         <header>
-          <div className="header">
-            <Link href="/">
-              <div>
+          <div className="header bg-slate bg-opacity-90 border-b-2 border-offslate flex h-24">
+            <Link href="/" className="">
+              <div className=" grow flex pl-50">
                 <Image
                   src="/rae-logo.svg"
                   alt="right angle engineering logo"
@@ -29,31 +44,37 @@ export default function Home() {
                 />
               </div>
             </Link>
-            <button>Log In</button>
-            <button>Get Started</button>
+            <div className="flex">
+              <button className=" bg-white text-black rounded-md">
+                Get Started
+              </button>
+              <button className="text-white">Log In</button>
+            </div>
           </div>
         </header>
         <div className="homepage">
           <div className="panel-one relative flex justify-center h-screen items-center overflow-hidden mb-12">
             <video
-              autoplay='true'
-              loop='ture'
+              autoPlay
+              loop
               muted
-              class="absolute z-10 w-auto min-w-full min-h-full max-w-none"
+              className="absolute z-10 w-auto min-w-full min-h-full max-w-none"
             >
               <source src="homevideo.webm" type="video/webm" />
             </video>
-            <div className="panel-one-text relative z-30 p-5 text-2xl text-white bg-slate bg-opacity-25 w-full h-full">
-              <h1>
+            <div className="panel-one-text flex flex-col justify-center items-center relative z-30 p-5 text-2xl font-bold text-white bg-slate bg-opacity-25 w-full h-full">
+              <h1 className="text-7xl w-full flex flex-col justify-center items-center">
                 CAD & Engineering
                 <div className="type-home text-orange" />
               </h1>
-              <h5>
-                Were bringing the solar industry into the modern era by
+              <h5 className="flex w-1/2 text-center font-normal ">
+                We&apos;re bringing the solar industry into the modern era by
                 revolutionizing the solar permitting process to be simple and
                 efficient
               </h5>
-              <button className="bg-white text-black rounded-xl">Request a demo</button>
+              <button className="bg-white text-black rounded-md font-normal text-sm w-48 h-12">
+                Request a demo
+              </button>
             </div>
           </div>
           <div className="panel-two">
@@ -62,6 +83,7 @@ export default function Home() {
               <div className="card">
                 <div className="cad-card">
                   <h5>CAD</h5>
+                  <FontAwesomeIcon icon={faHome} className="text-orange"/>
                   <div>
                     Our Solar Permit Designs include the cover sheet, site &
                     roof plan, string layout, attachment detail, and equipment
@@ -70,6 +92,7 @@ export default function Home() {
                 </div>
                 <div className="eng-card">
                   <h5>Engineering</h5>
+                  <FontAwesomeIcon icon={faCog} className="text-orange"/>
                   <div>
                     Our PE’s are licensed in all 50 states. We have you covered,
                     from special inspection forms, to post install visits, and
@@ -78,6 +101,7 @@ export default function Home() {
                 </div>
                 <div className="Int-card">
                   <h5>Intergrations</h5>
+                  <FontAwesomeIcon icon={faLongArrowAltUp} className="text-orange"/>
                   <div>
                     Our development team is in place to fully integrate into
                     your current system, and eliminate the common pain points
@@ -131,7 +155,7 @@ export default function Home() {
         </div>
       </main>
 
-      <footer>
+      <footer className="w-full flex flex-col">
         <div className="adress">
           <Image
             src="/rae-logo.svg"
@@ -163,14 +187,16 @@ export default function Home() {
           </div>
           <div className="social-links">
             <a href="https://www.facebook.com/profile.php?id=100075879137478">
-              Facebook icon
+              <FontAwesomeIcon icon={faFacebookSquare} />
             </a>
             <a href="https://www.instagram.com/rightangleengineering">
-              Instagram icon
+              <FontAwesomeIcon icon={faInstagramSquare} />
             </a>
-            <a href="https://twitter.com/RightAngleEng">Twitter icon</a>
+            <a href="https://twitter.com/RightAngleEng">
+              <FontAwesomeIcon icon={faTwitter} />
+            </a>
             <a href="https://www.linkedin.com/company/right-angle-engineering">
-              LinkedIn icon
+              <FontAwesomeIcon icon={faLinkedin} />
             </a>
           </div>
           <div>©2022 Right Angle Engineering, LLC. All rights reserved.</div>
